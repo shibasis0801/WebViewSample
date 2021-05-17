@@ -17,8 +17,8 @@ class MainActivity : AppCompatActivity() {
     fun onPermissionResult(permissions: Map<String, Boolean>) {
         permissions.forEach { Log.d(it.key, if(it.value) "Yes" else "No") }
         if (permissions.all { it.value }) {
-//           webView.loadUrl("https://demov4.revieve.com/myntra")
-            webView.loadUrl("https://shibasis-patnaik.web.app/react-webcam")
+           webView.loadUrl("https://demov4.revieve.com/myntra")
+//            webView.loadUrl("https://shibasis-patnaik.web.app/react-webcam")
         }
     }
 
